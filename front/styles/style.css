@@ -1,0 +1,789 @@
+header {
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0px 25px;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    header nav img {
+      width: 80px;
+      height: 80px; }
+    header nav ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      list-style: none;
+      height: 100%; }
+      header nav ul li {
+        color: #6b6868;
+        font-family: Helvetica;
+        font-style: italic;
+        font-size: 20px;
+        font-size: 500;
+        padding: 0px 40px;
+        -ms-flex-item-align: center;
+            align-self: center;
+        line-height: 80px; }
+        header nav ul li:hover {
+          font-size: 700;
+          background-color: #ece5e5;
+          color: #800c0c;
+          cursor: pointer;
+          -webkit-transition: all 0.8s;
+          transition: all 0.8s; }
+        header nav ul li:active {
+          background-color: rgba(128, 12, 12, 0.431);
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s; }
+
+body {
+  background-color: #f5eeee; }
+
+main #bienvenida h1 {
+  display: block;
+  text-align: center;
+  margin-top: 40vh;
+  font-family: Helvetica;
+  font-style: italic;
+  font-size: 30px;
+  text-shadow: 1px 2px 3px solid #0a0303;
+  color: #a75d5d; }
+main #contactos {
+  font-family: Helvetica;
+  margin: 20px; }
+  main #contactos h2 {
+    font-size: 30px; }
+    main #contactos h2 h5 {
+      font-size: 15px;
+      color: darkgray; }
+  main #contactos #cabecera {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    margin-top: 15px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    main #contactos #cabecera div {
+      width: 50%; }
+      main #contactos #cabecera div h2 {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+        width: 300px;
+        line-height: 50px;
+        margin-left: auto;
+        color: white;
+        text-shadow: 2px 2px 2px #034203;
+        background-color: rgba(131, 223, 171, 0.726);
+        border-radius: 10px; }
+      main #contactos #cabecera div h2:hover {
+        background-color: rgba(56, 180, 110, 0.726);
+        -webkit-transition: 0.5s all;
+        transition: 0.5s all; }
+      main #contactos #cabecera div input {
+        width: 300px;
+        height: 30px;
+        border-radius: 10px;
+        border-color: #d1cece; }
+      main #contactos #cabecera div span {
+        margin: 0px 15px;
+        font-size: 23px;
+        vertical-align: middle;
+        color: skyblue; }
+    main #contactos #cabecera #arrayDelete {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin-top: 25px;
+      margin-bottom: 5px;
+      color: #801717; }
+  main #contactos table {
+    width: 100%;
+    background-color: white;
+    border-radius: 25px; }
+    main #contactos table thead {
+      background-color: skyblue;
+      color: white;
+      font-size: 17px; }
+      main #contactos table thead tr {
+        height: 30px; }
+        main #contactos table thead tr th {
+          border-radius: 15px;
+          font-weight: 500; }
+          main #contactos table thead tr th span {
+            color: #5f5d5d;
+            padding: 0px 10px;
+            font-size: 20px; }
+    main #contactos table tbody tr:hover {
+      background-color: #d3ecf6;
+      -webkit-transition: all 0.8s;
+      transition: all 0.8s; }
+    main #contactos table tbody tr.contactive {
+      background-color: rgba(131, 223, 171, 0.726); }
+    main #contactos table tbody tr th .editar {
+      background: #e4bb6f;
+      border-radius: 10px;
+      width: 100px;
+      padding: 5px 20px;
+      color: white;
+      font-size: 15px;
+      font-weight: 500;
+      margin: 3px auto; }
+    main #contactos table tbody tr th .eliminar {
+      background: #c56161;
+      border-radius: 10px;
+      width: 100px;
+      padding: 5px 20px;
+      color: white;
+      font-size: 15px;
+      font-weight: 500;
+      margin: 3px auto; }
+  main #contactos form #cont-up {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    margin-top: 15px;
+    padding-top: 13px;
+    background-color: skyblue;
+    border-radius: 10px;
+    height: 90px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    main #contactos form #cont-up li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column wrap;
+              flex-flow: column wrap; }
+      main #contactos form #cont-up li label {
+        color: white;
+        margin: 5px 0px; }
+      main #contactos form #cont-up li input {
+        border-radius: 5px;
+        border-color: skyblue;
+        font-weight: 700;
+        padding: 0px 5px;
+        font-size: 17px;
+        border: 0px; }
+      main #contactos form #cont-up li select {
+        border-radius: 5px;
+        border-color: skyblue;
+        font-weight: 700;
+        padding: 0px 5px;
+        font-size: 17px;
+        border: 0px; }
+      main #contactos form #cont-up li h4 {
+        font-size: 10px;
+        color: white;
+        font-weight: 500;
+        margin-top: 3px; }
+  main #contactos form #cont-down {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.8fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    gap: 0px 0px;
+    grid-template-areas: "reg pai ciu dir int" "canal canal canal canal canal" "tel tel tel tel tel" "wha wha wha wha wha" "ins ins ins ins ins" "fac fac fac fac fac" "lin lin lin lin lin";
+    padding: 20px 30px;
+    background-color: #cee7f1;
+    margin: 0px 15px; }
+    main #contactos form #cont-down .reg {
+      grid-area: reg; }
+    main #contactos form #cont-down .pai {
+      grid-area: pai; }
+    main #contactos form #cont-down .ciu {
+      grid-area: ciu; }
+    main #contactos form #cont-down .dir {
+      grid-area: dir; }
+    main #contactos form #cont-down .int {
+      grid-area: int; }
+    main #contactos form #cont-down .canal {
+      grid-area: canal; }
+    main #contactos form #cont-down .tel {
+      grid-area: tel; }
+    main #contactos form #cont-down .wha {
+      grid-area: wha; }
+    main #contactos form #cont-down .ins {
+      grid-area: ins; }
+    main #contactos form #cont-down .fac {
+      grid-area: fac; }
+    main #contactos form #cont-down .lin {
+      grid-area: lin; }
+    main #contactos form #cont-down li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column nowrap;
+              flex-flow: column nowrap; }
+      main #contactos form #cont-down li.canal {
+        display: grid;
+        grid-template-columns: 180px 350px 170px 100px;
+        grid-template-rows: 1fr;
+        -webkit-column-gap: 10px;
+                column-gap: 10px; }
+        main #contactos form #cont-down li.canal label {
+          -ms-flex-item-align: end;
+              align-self: flex-end;
+          margin-bottom: 8px;
+          font-size: 17px; }
+      main #contactos form #cont-down li.tel {
+        display: grid;
+        grid-template-columns: 180px 350px 170px 100px;
+        grid-template-rows: 20px;
+        -webkit-column-gap: 10px;
+                column-gap: 10px; }
+        main #contactos form #cont-down li.tel input {
+          width: 350px; }
+        main #contactos form #cont-down li.tel select {
+          width: 170px; }
+      main #contactos form #cont-down li.wha {
+        display: grid;
+        grid-template-columns: 180px 350px 170px 100px;
+        grid-template-rows: 20px;
+        -webkit-column-gap: 10px;
+                column-gap: 10px; }
+        main #contactos form #cont-down li.wha input {
+          width: 350px; }
+        main #contactos form #cont-down li.wha select {
+          width: 170px; }
+      main #contactos form #cont-down li.ins {
+        display: grid;
+        grid-template-columns: 180px 350px 170px 100px;
+        grid-template-rows: 20px;
+        -webkit-column-gap: 10px;
+                column-gap: 10px; }
+        main #contactos form #cont-down li.ins input {
+          width: 350px; }
+        main #contactos form #cont-down li.ins select {
+          width: 170px; }
+      main #contactos form #cont-down li.fac {
+        display: grid;
+        grid-template-columns: 180px 350px 170px 100px;
+        grid-template-rows: 20px;
+        -webkit-column-gap: 10px;
+                column-gap: 10px; }
+        main #contactos form #cont-down li.fac input {
+          width: 350px; }
+        main #contactos form #cont-down li.fac select {
+          width: 170px; }
+      main #contactos form #cont-down li.lin {
+        display: grid;
+        grid-template-columns: 180px 350px 170px 100px;
+        grid-template-rows: 20px;
+        -webkit-column-gap: 10px;
+                column-gap: 10px; }
+        main #contactos form #cont-down li.lin input {
+          width: 350px; }
+        main #contactos form #cont-down li.lin select {
+          width: 170px; }
+      main #contactos form #cont-down li label {
+        color: black;
+        margin: 5px 0px; }
+      main #contactos form #cont-down li input {
+        border-radius: 5px;
+        border-color: #dcdcdc;
+        font-weight: 700;
+        padding: 0px 5px;
+        font-size: 17px;
+        border: 0px;
+        width: 250px; }
+      main #contactos form #cont-down li select {
+        border-radius: 5px;
+        border-color: #dcdcdc;
+        font-weight: 700;
+        padding: 0px 5px;
+        font-size: 17px;
+        border: 0px;
+        width: 250px; }
+      main #contactos form #cont-down li h4 {
+        font-size: 10px;
+        color: gray;
+        font-weight: 500;
+        margin-top: 3px;
+        width: 250px; }
+  main #contactos form #botonaccion {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    width: 170px;
+    line-height: 50px;
+    margin: 15px 15px 15px auto;
+    color: white;
+    text-shadow: 2px 2px 2px #034203;
+    background-color: rgba(70, 167, 112, 0.726);
+    border-radius: 10px; }
+  main #contactos form #botonaccion:hover {
+    background-color: #055e05;
+    -webkit-transition: 0.8s;
+    transition: 0.8s; }
+main #usuarios {
+  font-family: Helvetica;
+  margin: 20px; }
+  main #usuarios h2 {
+    font-size: 30px; }
+  main #usuarios div h2 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    width: 300px;
+    line-height: 50px;
+    margin-left: auto;
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: white;
+    text-shadow: 2px 2px 2px #034203;
+    background-color: rgba(131, 223, 171, 0.726);
+    border-radius: 10px; }
+  main #usuarios div h2:hover {
+    background-color: rgba(56, 180, 110, 0.726);
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all; }
+  main #usuarios table {
+    width: 50%;
+    margin: auto;
+    background-color: white;
+    border-radius: 25px; }
+    main #usuarios table thead {
+      background-color: skyblue;
+      color: white;
+      font-size: 17px; }
+      main #usuarios table thead tr {
+        height: 30px; }
+        main #usuarios table thead tr th {
+          border-radius: 15px;
+          font-weight: 500; }
+          main #usuarios table thead tr th span {
+            color: lightgray;
+            padding: 0px 10px;
+            font-size: 20px; }
+    main #usuarios table tbody tr:hover {
+      background-color: ghostwhite; }
+    main #usuarios table tbody tr th .editar {
+      background: #e7cf7e;
+      border-radius: 10px;
+      width: 100px;
+      padding: 5px 20px;
+      color: white;
+      font-size: 15px;
+      font-weight: 500;
+      margin: 3px auto; }
+    main #usuarios table tbody tr th .eliminar {
+      background: #be5c5c;
+      border-radius: 10px;
+      width: 100px;
+      padding: 5px 20px;
+      color: white;
+      font-size: 15px;
+      font-weight: 500;
+      margin: 3px auto; }
+  main #usuarios form {
+    width: 80%;
+    margin: auto; }
+    main #usuarios form ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      margin-top: 15px;
+      padding-top: 13px;
+      background-color: #eee5e5;
+      border-radius: 10px;
+      height: 150px;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+      main #usuarios form ul li {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column nowrap;
+                flex-flow: column nowrap;
+        width: 33.33%;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        main #usuarios form ul li label {
+          color: black;
+          margin: 5px 0px; }
+        main #usuarios form ul li input {
+          border-radius: 5px;
+          border-color: #dcdcdc;
+          font-weight: 700;
+          padding: 0px 5px;
+          font-size: 17px;
+          border: 0px;
+          width: 250px; }
+  main #usuarios #botonaccion {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    width: 170px;
+    line-height: 50px;
+    margin: 15px 15px 15px auto;
+    color: white;
+    text-shadow: 2px 2px 2px #034203;
+    background-color: rgba(131, 223, 171, 0.726);
+    border-radius: 10px; }
+  main #usuarios #botonaccion:hover {
+    background-color: rgba(56, 180, 110, 0.726);
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all; }
+main #companias {
+  font-family: Helvetica;
+  margin: 20px; }
+  main #companias h2 {
+    font-size: 30px; }
+  main #companias div h2 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    width: 300px;
+    line-height: 50px;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: white;
+    text-shadow: 2px 2px 2px #034203;
+    background-color: rgba(131, 223, 171, 0.726);
+    border-radius: 10px; }
+  main #companias div h2:hover {
+    background-color: rgba(56, 180, 110, 0.726);
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all; }
+  main #companias table {
+    width: 80%;
+    margin: auto;
+    background-color: white; }
+    main #companias table thead {
+      background-color: skyblue;
+      color: white;
+      font-size: 17px; }
+      main #companias table thead tr {
+        height: 30px;
+        border-radius: 25px; }
+        main #companias table thead tr th {
+          border-radius: 25px;
+          font-weight: 500; }
+          main #companias table thead tr th span {
+            color: #6e6c6c;
+            padding: 0px 10px;
+            font-size: 20px; }
+    main #companias table tbody tr:hover {
+      background-color: #d0eaf5;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s; }
+    main #companias table tbody tr th .editar {
+      background: #d3bc8c;
+      border-radius: 10px;
+      width: 100px;
+      padding: 5px 20px;
+      color: white;
+      font-size: 15px;
+      font-weight: 500;
+      margin: 3px auto; }
+    main #companias table tbody tr th .eliminar {
+      background: #ad4f4f;
+      border-radius: 10px;
+      width: 100px;
+      padding: 5px 20px;
+      color: white;
+      font-size: 15px;
+      font-weight: 500;
+      margin: 3px auto; }
+  main #companias form {
+    width: 65%;
+    margin: auto; }
+    main #companias form ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      margin-top: 15px;
+      padding-top: 13px;
+      background-color: #c3e6f3;
+      border-radius: 10px;
+      height: 150px;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+      main #companias form ul li {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column nowrap;
+                flex-flow: column nowrap;
+        width: 33.33%;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        main #companias form ul li label {
+          color: black;
+          margin: 5px 0px; }
+        main #companias form ul li input {
+          border-radius: 5px;
+          border-color: #dcdcdc;
+          font-weight: 700;
+          padding: 0px 5px;
+          font-size: 17px;
+          border: 0px;
+          width: 250px; }
+        main #companias form ul li select {
+          border-radius: 5px;
+          border-color: #dcdcdc;
+          font-weight: 700;
+          padding: 0px 5px;
+          font-size: 17px;
+          border: 0px;
+          width: 250px; }
+        main #companias form ul li h4 {
+          font-size: 10px;
+          color: gray;
+          font-weight: 500;
+          margin-top: 3px;
+          width: 250px; }
+  main #companias #botonaccion {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    width: 170px;
+    line-height: 50px;
+    margin: 15px 15px 15px auto;
+    color: white;
+    background-color: #75c598;
+    border-radius: 10px; }
+  main #companias #botonaccion:hover {
+    background-color: rgba(13, 110, 55, 0.726);
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all; }
+main #zonas {
+  font-family: Helvetica;
+  margin: 20px; }
+  main #zonas h2 {
+    font-size: 30px; }
+  main #zonas div h2 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    width: 300px;
+    line-height: 50px;
+    margin-left: auto;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 2px #034203;
+    background-color: rgba(131, 223, 171, 0.726);
+    border-radius: 10px; }
+  main #zonas div h2:hover {
+    background-color: rgba(56, 180, 110, 0.726);
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all; }
+  main #zonas .editar {
+    background: #e0c57a;
+    border-radius: 10px;
+    width: 100px;
+    padding: 5px 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 20px; }
+  main #zonas .eliminar {
+    background: #c04949;
+    border-radius: 10px;
+    width: 100px;
+    padding: 5px 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 20px; }
+  main #zonas .agregarpais {
+    background: #5ecc8e;
+    border-radius: 10px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 5px 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 20px; }
+  main #zonas .agregarciudad {
+    background: #46bd79;
+    border-radius: 10px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 5px 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 20px; }
+  main #zonas .region {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px; }
+    main #zonas .region div {
+      margin-bottom: 15px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap; }
+      main #zonas .region div h3 {
+        font-size: 27px;
+        width: 250px;
+        color: #4f627a; }
+    main #zonas .region .pais {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column nowrap;
+              flex-flow: column nowrap;
+      margin-left: 70px;
+      background-color: #edf8fd;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 10px; }
+      main #zonas .region .pais div {
+        margin-bottom: 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row nowrap;
+                flex-flow: row nowrap; }
+        main #zonas .region .pais div h3 {
+          font-size: 23px;
+          width: 250px; }
+      main #zonas .region .pais .ciudad {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column nowrap;
+                flex-flow: column nowrap;
+        margin-left: 70px; }
+        main #zonas .region .pais .ciudad div {
+          margin-bottom: 0px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-flow: row nowrap;
+                  flex-flow: row nowrap; }
+          main #zonas .region .pais .ciudad div h3 {
+            font-size: 19px;
+            width: 250px; }
+  main #zonas form {
+    width: 40%;
+    margin: auto; }
+    main #zonas form ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      margin-top: 15px;
+      padding: 30px;
+      background-color: #b4deee;
+      border-radius: 10px;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      text-align: center; }
+      main #zonas form ul li label {
+        color: #4e4b4b;
+        margin: 5px 0px; }
+      main #zonas form ul li input {
+        border-radius: 5px;
+        border-color: #f1f0f0;
+        font-weight: 700;
+        padding: 0px 5px;
+        font-size: 17px;
+        border: 0px;
+        width: 250px; }
+    main #zonas form #botonaccion {
+      text-align: center;
+      font-size: 18px;
+      font-weight: 500;
+      width: 170px;
+      line-height: 50px;
+      margin: 15px 15px 15px auto;
+      color: white;
+      background-color: #75c598;
+      border-radius: 10px; }
+    main #zonas form #botonaccion:hover {
+      background-color: rgba(10, 182, 84, 0.726);
+      -webkit-transition: 0.5s all;
+      transition: 0.5s all; }
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* transition: 0.5s ease all; */ }
+  * a {
+    text-decoration: none;
+    cursor: pointer; }
+  * li {
+    list-style: none; }
+  * span {
+    cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */
